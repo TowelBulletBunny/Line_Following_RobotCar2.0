@@ -57,6 +57,7 @@ def move_robot(error):
     derivative = error - last_error
     last_error = error 
 
+    #sharp turns 
     if abs(error) > 30:
         spin_power = 85 
         if error > 0: # Spin Right
